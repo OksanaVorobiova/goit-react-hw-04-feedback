@@ -11,12 +11,12 @@ export const App = () => {
 
   const feedback = { good, neutral, bad };
 
-  const handleBtnClick = ({ target }) => {
-    if (target.name === 'good') {
+  const handleBtnClick = ({ target: { name } }) => {
+    if (name === 'good') {
       setGood(prev => (prev += 1));
-    } else if (target.name === 'neutral') {
+    } else if (name === 'neutral') {
       setNeutral(prev => (prev += 1));
-    } else if (target.name === 'bad') {
+    } else if (name === 'bad') {
       setBad(prev => (prev += 1));
     }
   };
