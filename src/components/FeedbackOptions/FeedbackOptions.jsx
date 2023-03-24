@@ -19,22 +19,3 @@ FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func,
   options: PropTypes.arrayOf(PropTypes.string),
 };
-
-/*
-<li>
-        <button type="button" name="good">
-          Good
-        </button>
-      </li>
-      <li>
-        <button type="button" name="neutral">
-          Neutral
-        </button>
-      </li>
-      <li>
-        <button type="button" name="bad">
-          Bad
-        </button>
-      </li>
-
-*/
